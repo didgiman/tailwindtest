@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    .btn {
+      background-image: url('button-blue.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .btn:hover {
+      background-image: url('button-orange.png');
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container mx-auto bg-blue-500 lg:bg-teal-500 p-6 shadow-lg mt-10 rounded-lg">
+    <h1 class="text-3xl font-bold underline pb-5 text-center">
+      Soundboard
+    </h1>
+    <div class="grid gap-4 grid-cols-2 md:grid-cols-4 lg:grid-cols-6 p-6 border-2 border-yellow-300 border-dashed">
+      <div class="flex items-center bg-gradient-to-r from-cyan-500 to-blue-500 lg:from-purple-500 lg:to-teal-500 hover:from-purple-500 hover:to-pink-500 rounded-lg">
+        <audio id="sound1" src="synth.wav" preload="auto"></audio>
+        <div class="btn w-full h-60" onclick="document.getElementById('sound1').play();"></div>
+      </div>
+      <div class="flex items-center bg-gradient-to-r from-cyan-500 to-blue-500 lg:from-purple-500 lg:to-teal-500 hover:from-purple-500 hover:to-pink-500 rounded-lg">
+        <audio id="sound2" src="crank.flac" preload="auto"></audio>
+        <div class="btn w-full h-60" onclick="document.getElementById('sound2').play();"></div>
+      </div>
+      <div class="flex items-center bg-gradient-to-r from-cyan-500 to-blue-500 lg:from-purple-500 lg:to-teal-500 hover:from-purple-500 hover:to-pink-500 rounded-lg">
+        <audio id="sound3" src="minous.wav" preload="auto"></audio>
+        <div class="btn w-full h-60" onclick="document.getElementById('sound3').play();"></div>
+      </div>
+      <div class="flex items-center bg-gradient-to-r from-cyan-500 to-blue-500 lg:from-purple-500 lg:to-teal-500 hover:from-purple-500 hover:to-pink-500 rounded-lg">
+        <audio id="sound4" src="boop.wav" preload="auto"></audio>
+        <div class="btn w-full h-60" onclick="document.getElementById('sound4').play();"></div>
+      </div>
+      <div class="flex items-center bg-gradient-to-r from-cyan-500 to-blue-500 lg:from-purple-500 lg:to-teal-500 hover:from-purple-500 hover:to-pink-500 rounded-lg">
+        <audio id="sound5" src="chime.wav" preload="auto"></audio>
+        <div class="btn w-full h-60" onclick="document.getElementById('sound5').play();"></div>
+      </div>
+      <div class="flex items-center bg-gradient-to-r from-cyan-500 to-blue-500 lg:from-purple-500 lg:to-teal-500 hover:from-purple-500 hover:to-pink-500 rounded-lg">
+        <audio id="sound6" src="guitar.wav" preload="auto"></audio>
+        <div class="btn w-full h-60" onclick="document.getElementById('sound6').play();"></div>
+      </div>
+      <div class="flex items-center bg-gradient-to-r from-cyan-500 to-blue-500 lg:from-purple-500 lg:to-teal-500 hover:from-purple-500 hover:to-pink-500 rounded-lg">
+        <div class="btn w-full h-60" onclick="document.getElementById('sound1').play();"></div>
+      </div>
+      <div class="flex items-center bg-gradient-to-r from-cyan-500 to-blue-500 lg:from-purple-500 lg:to-teal-500 hover:from-purple-500 hover:to-pink-500 rounded-lg">
+        <div class="btn w-full h-60" onclick="document.getElementById('sound2').play();"></div>
+      </div>
+      <div class="flex items-center bg-gradient-to-r from-cyan-500 to-blue-500 lg:from-purple-500 lg:to-teal-500 hover:from-purple-500 hover:to-pink-500 rounded-lg">
+        <div class="btn w-full h-60" onclick="document.getElementById('sound3').play();"></div>
+      </div>
+    </div>
+
+    <!-- <div class="grid gap-4 grid-cols-2 md:grid-cols-4 lg:grid-cols-5">
+      <div>
+        <audio id="sound1" src="synth.wav" preload="auto"></audio>
+        <img src="button-blue.png" class="w-full h-2/2" onclick="document.getElementById('sound1').play();">
+      </div>
+      <div>
+        <audio id="sound2" src="crank.flac" preload="auto"></audio>
+        <div class="btn w-full h-60" onclick="document.getElementById('sound2').play();"></div>
+      </div>
+      <div>
+        <audio id="sound3" src="minous.wav" preload="auto"></audio>
+        <div class="btn w-full h-60" onclick="document.getElementById('sound3').play();"></div>
+      </div>
+      <div>
+        <audio id="sound4" src="boop.wav" preload="auto"></audio>
+        <div class="btn w-full h-60" onclick="document.getElementById('sound4').play();"></div>
+      </div>
+      <div>
+        <audio id="sound5" src="chime.wav" preload="auto"></audio>
+        <div class="btn w-full h-60" onclick="document.getElementById('sound5').play();"></div>
+      </div>
+      <div>
+        <audio id="sound6" src="guitar.wav" preload="auto"></audio>
+        <div class="btn w-full h-60" onclick="document.getElementById('sound6').play();"></div>
+      </div>
+    </div> -->
+
+  </div>
+
+
+</body>
+
+</html>
